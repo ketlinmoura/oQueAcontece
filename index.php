@@ -1,5 +1,6 @@
 <!-- INCLUDE DAS CONFIGURAÇÕES BÁSICAS -->
 <?php 
+setlocale (LC_ALL, 'nl_NL');
 require_once 'config/config_basico.php';
 require_once 'config/config_sao_roque.php'; 
 ?>
@@ -35,7 +36,7 @@ require_once 'config/config_sao_roque.php';
 	<?php 
 	for ($x=0; $x <= $qnt_dias_semana; $x++) { 
 	?>
-		<span><?=$data_numero[$x]?></span>
+		<span><?=$data_numero[$x]?> <br> <?=$data_semana[$x]?></span>
 	<?php
 	}
 	?>
