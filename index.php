@@ -1,8 +1,14 @@
 <!-- INCLUDE DAS CONFIGURAÇÕES BÁSICAS -->
-<?php require_once 'config/config_sao_roque.php'; ?>
+<?php 
+require_once 'config/config_basico.php';
+require_once 'config/config_sao_roque.php'; 
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
+<!-- META RESPONSAVEL PARA RENDEREIZAR O TOUCH NO MOBILE FIRST -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- INICIO CSS -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -16,20 +22,43 @@
 	<meta charset="UTF-8">
 	<title><?=$titulo_home?></title>
 </head>
-<body>
+<body class="container-fluid">
 
 <!-- INCLUDE TOPO DO SITE BANNER / MENU -->
 <?php include_once 'includes/topo.php'; ?>
 
-<header class="jumbotron">
-	<div class="container">
-		<h1>Bem Vindo à <?=$cidade_nome?></h1>
-		<p><?=$descricao_portal?></p>
-		<p>
-			<a class="btn btn-primary btn-lg">Veja +</a>
-		</p>
-	</div>
+<header class="row-fluid">
+	
 </header>
+	
+<div class="row-fluid data_semana" >
+	<?php 
+	for ($x=0; $x <= $qnt_dias_semana; $x++) { 
+	?>
+		<span><?=$data_numero[$x]?></span>
+	<?php
+	}
+	?>
+</div>
+<article id="eventos">
+	<div class="row-fluid">
+		<div class="col-md-3 col-xs-12 col-sm-6">item</div>
+		<div class="col-md-3 col-xs-12 col-sm-6">item</div>
+		<div class="col-md-3 col-xs-12 col-sm-6">item</div>
+		<div class="col-md-3 col-xs-12 col-sm-6">item</div>
+	</div>
+
+	<div class="row-fluid">
+		<div class="col-md-6 col-xs-12 col-sm-6">Propaganda</div>
+		<div class="col-md-6 col-xs-12 col-sm-6">Propaganda</div>
+	</div>
+	<div class="row-fluid">
+		<div class="col-md-3 col-xs-12 col-sm-6">item</div>
+		<div class="col-md-3 col-xs-12 col-sm-6">item</div>
+		<div class="col-md-3 col-xs-12 col-sm-6">item</div>
+		<div class="col-md-3 col-xs-12 col-sm-6">item</div>
+	</div>
+</article>
 
 <!-- INCLUDE DO RODAPE DO SITE / LINKS JAVASCRIPT-->
 <?php require_once 'includes/rodape.php'; ?>

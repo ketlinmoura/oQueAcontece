@@ -1,4 +1,4 @@
-<footer id="rodape" class="col-md-12 container-fluid">
+<footer id="rodape" class="row-fluid">
 	<h1>footer</h1>	
 </footer>
 

@@ -4,6 +4,7 @@
 :root{
 	--fundo:red;
 	--cor_tema:#444;
+	--cor_bg_data:#16C1D5;
 }
 /* FIM CORES */
 
@@ -18,3 +19,12 @@
 	border-color:var(--fundo);
 }
 /* FIM ESTILO RODAPE */
+
+
+
+
+/* ESITILO DATA SEMANA TOPO */
+.data_semana{
+	background-color:var(--cor_bg_data);
+}
+/* FIM DATA SEMANA */
