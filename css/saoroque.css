@@ -1,0 +1,20 @@
+/* CSS UTILIZADO SOMENTE PARA A PERSONALIZAÇÃO DE CORES DE saoroque.css */
+
+/* CORES PADRÕES */
+:root{
+	--fundo:red;
+	--cor_tema:#444;
+}
+/* FIM CORES */
+
+/* INICIO ESTILO MENU */
+.navbar-toggle{
+	background:var(--cor_tema);
+}
+/* FIM ESTILO MENU */
+
+/* INICIO ESTILO RODAPE */
+#rodape{
+	border-color:var(--fundo);
+}
+/* FIM ESTILO RODAPE */
